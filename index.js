@@ -39,7 +39,7 @@ if (cart.length === 1) {
 }
 
 if (cart.length === 2) {
-
+  return `In your cart, you have ${cart.itemName[0]} at ${cart.itemPrice[0]}, and ${cart.itemName[1]} at ${cart.itemPrice[1]} `
 }
 
 function total() {
