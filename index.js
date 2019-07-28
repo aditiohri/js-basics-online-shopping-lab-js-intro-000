@@ -16,6 +16,18 @@ function addToCart(item) {
  return `${item.itemName} has been added to your cart.`
 }
 
+function getRandomInt(min, max) {
+  return Math.floor(Math.random(min) * Math.floor(max) + 1);
+}
+
+function generateCartItem(item)
+return {
+  itemName: itemName,
+  itemPrice: getRandomInt(1, 100)
+}
+
+
+
 function viewCart() {
   // write your code here
 }
