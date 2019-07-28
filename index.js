@@ -34,10 +34,10 @@ function viewCart() {
     return `Your shopping cart is empty.`
   }
   if (cart.length === 1) {
-    return `In your cart, you have ${cart.itemName} at ${cart.itemPrice}.`
+    return `In your cart, you have ${getCart().itemName} at ${getCart().itemPrice}.`
   }
   if (cart.length === 2) {
-    return `In your cart, you have ${cart.itemName[0]} at ${cart.itemPrice[0]}, and ${cart.itemName[1]} at ${cart.itemPrice[1]}.`
+    return `In your cart, you have ${getCart().itemName[0]} at ${getCart().itemPrice[0]}, and ${getCart().itemName[1]} at ${getCart().itemPrice[1]}.`
   }
 }
 
