@@ -34,9 +34,6 @@ function viewCart() {
     return `Your shopping cart is empty.`
   }
 
-if (cart.length === 1) {
-  return `In your cart, you have ${cart.itemName} at ${cart.itemPrice}.`
-}
 
 
 
