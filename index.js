@@ -34,8 +34,8 @@ function viewCart() {
     return `Your shopping cart is empty.`
   }
 
-
-  return `In your cart, you have `
+if (cart.length >= 1)
+  return `In your cart, you have ${itemName} at ${itemPrice}.`
 }
 
 function total() {
