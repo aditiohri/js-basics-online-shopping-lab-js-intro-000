@@ -33,6 +33,8 @@ function viewCart() {
   if (!cart.length) {
     return `Your shopping cart is empty.`
   }
+
+  
   return `In your cart, you have `
 }
 
