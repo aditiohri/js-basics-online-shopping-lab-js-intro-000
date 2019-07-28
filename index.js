@@ -30,7 +30,7 @@ return {
 
 function viewCart() {
   // write your code here
-  if (!getCart().length) {
+  if (getCart().length === 0) {
     return `Your shopping cart is empty.`
   }
   if (getCart().length === 1) {
