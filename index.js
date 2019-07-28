@@ -30,13 +30,13 @@ return {
 
 function viewCart() {
   // write your code here
-  if (!cart.length) {
+  if (!getCart().length) {
     return `Your shopping cart is empty.`
   }
-  if (cart.length === 1) {
+  if (getCart().length === 1) {
     return `In your cart, you have ${getCart().itemName} at ${getCart().itemPrice}.`
   }
-  if (cart.length === 2) {
+  if (getCart().length === 2) {
     return `In your cart, you have ${getCart().itemName[0]} at ${getCart().itemPrice[0]}, and ${getCart().itemName[1]} at ${getCart().itemPrice[1]}.`
   }
 }
